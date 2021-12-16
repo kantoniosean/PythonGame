@@ -1,6 +1,5 @@
 import pygame
 import os
-import debris_module
 pygame.font.init()
 
 WIDTH, HEIGHT = 1000, 600
@@ -55,7 +54,6 @@ def draw_diaplay(yellow, red, yellow_bullets, red_bullets, yellow_lives, red_liv
 
     pygame.display.update()
 
-    debris_module.draw_debris()
 
 def red_moves(key_selected, red):
     if key_selected[pygame.K_s] and red.x - VALUE > 0: #Left Movement
