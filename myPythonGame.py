@@ -20,16 +20,16 @@ BOARDER = pygame.Rect(WIDTH//2 - 10, 0, 10, HEIGHT)
 
 IMAGE_WIDTH, IMAGE_HEIGHT = (50, 45)
 
-IMAGE_Y = pygame.image.load(os.path.join('Assets', 'spaceship_yellow.png'))
+IMAGE_Y = pygame.image.load(os.path.join('Images', 'spaceship_yellow.png'))
 IMAGE_YT = pygame.transform.rotate(pygame.transform.scale(IMAGE_Y, (IMAGE_WIDTH, IMAGE_HEIGHT)), 270)
-IMAGE_R = pygame.transform.rotate(pygame.image.load(os.path.join('Assets', 'spaceship_red.png')), 90)
+IMAGE_R = pygame.transform.rotate(pygame.image.load(os.path.join('Images', 'spaceship_red.png')), 90)
 IMAGE_RT = pygame.transform.scale((IMAGE_R), (IMAGE_WIDTH, IMAGE_HEIGHT))
 
 VALUE = 1
 BULLETS_SPEED = 6
 MAX_BULLETS = 5
 
-SPACE_THEME = pygame.transform.scale(pygame.image.load(os.path.join('Assets', 'starwars2.png')), (WIDTH, HEIGHT))
+SPACE_THEME = pygame.transform.scale(pygame.image.load(os.path.join('Images', 'starwars2.png')), (WIDTH, HEIGHT))
 
 LIVES_FONT = pygame.font.SysFont('arialblack', 50)
 WINNER_FONT = pygame.font.SysFont('arialblack', 110)
